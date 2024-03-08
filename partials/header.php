@@ -15,7 +15,7 @@
 <body>
     <header class="container main-header">
         <div>
-          <a href="index.html">
+          <a href="index.php">
             <img src="img/logo.png" height="40">
           </a>
         </div>
