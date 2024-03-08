@@ -26,15 +26,6 @@
             echo('</div>');
           }
         ?>
-        <div class="slide fade">
-        </div>
-        
-        <div class="slide fade">
-        </div>
-        
-        <div class="slide fade">
-        </div>
-        
         <a id="prev" class="prev">❮</a>
         <a id="next" class="next">❯</a>
         
