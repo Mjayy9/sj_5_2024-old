@@ -13,9 +13,15 @@
       </div>
       <div class="col-25">
         <h4>Rýchle odkazy</h4>
-        <p><a href="/">Domov</a></p>
-        <p><a href="/qna">Q&A</a></p>
-        <p><a href="/kontakt">Kontakt</a></p>
+        <?php
+          $pages = array('Domov' => 'index.php',
+          'Portfólio' => 'portfolio.php',
+          'Q&A' => 'qna.php',
+          'Kontakt' => 'kontakt.php'
+          );
+                    
+          echo(generate_menu($pages));
+        ?>
       </div>
       <div class="col-25">
         <h4>Nájdete nás</h4>
@@ -26,8 +32,8 @@
       Created and designed by Lívia
     </div>
   </footer>
-
-    <script src="js/menu.js"></script>
-    <script src="js/slider.js"></script>
+    <?php
+    add_scripts();
+    ?>
 </body>
 </html>
