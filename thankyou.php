@@ -1,6 +1,6 @@
-<?php 
-      include('partials/header.php');
-    ?>
+<?php
+  include_once('partials/header.php');
+?>
     <main>
       <section class="banner">
         <div class="container text-white">
@@ -17,7 +17,8 @@
 
 
     </main>
-    
     <?php
-      include_once('partials/footer.php')
+    include_once('partials/footer.php')
     ?>
+</body>
+</html>

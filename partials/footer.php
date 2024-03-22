@@ -14,13 +14,12 @@
       <div class="col-25">
         <h4>Rýchle odkazy</h4>
         <?php
-          $pages = array('Domov' => 'index.php',
-          'Portfólio' => 'portfolio.php',
+        $pages = [
           'Q&A' => 'qna.php',
           'Kontakt' => 'kontakt.php'
-          );
-                    
-          echo(generate_menu($pages));
+        ];
+
+        echo(generate_menu($pages));
         ?>
       </div>
       <div class="col-25">
@@ -32,8 +31,8 @@
       Created and designed by Lívia
     </div>
   </footer>
-    <?php
-    add_scripts();
-    ?>
+  <?php
+    echo(add_scripts());
+  ?>
 </body>
 </html>

@@ -1,6 +1,6 @@
-<?php 
-      include('partials/header.php');
-    ?>
+<?php
+  include_once('partials/header.php');
+?>
   <main>
     <section class="banner">
       <div class="container text-white">
@@ -15,22 +15,20 @@
       </div>
     </section>
       <section class="container">
-      <div class="accordion">
-        <div class="question">Otázka 1</div>
-        <div class="answer">Odpoveď 1</div>
-      </div>
-      <div class="accordion">
-        <div class="question">Otázka 2</div>
-        <div class="answer">Odpoveď 2</div>
-      </div>
-      <div class="accordion">
-        <div class="question">Otázka 3</div>
-        <div class="answer">Odpoveď 3</div>
-      </div>
+        <?php
+          $qna = array('Otázka 1' => 'Odpoveď 1',
+                       'Otázka 2' => 'Odpoveď 2',
+                       'Otázka 3' => 'Odpoveď 3',
+                       'Otázka 4' => 'Odpoveď 4'
+        );
+        generate_qna($qna);
+        ?>
     </section>
     </section>
   </div>
   </main>
   <?php
-    include_once('partials/footer.php')
+  include_once('partials/footer.php')
   ?>
+</body>
+</html>

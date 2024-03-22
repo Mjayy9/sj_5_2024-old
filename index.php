@@ -1,30 +1,10 @@
-    <?php 
-      include('partials/header.php');
-    ?>
+<?php
+  include_once('partials/header.php');
+?>
     <main>
       <section class="slides-container">
         <?php
-          $headings = array('Prvý nadpis', 'Druhý nadpis', 'Tretí nadpis');
-          $img_folder = 'img/carousel/';
-          $img_files = glob($img_folder . '*.jpg');
-
-          for($i = 0; $i < count ($img_files); $i++) {
-            echo('<div class = "slide fade">');
-            echo('<img src ="'.$img_files[$i].'">');
-            echo('<div class =" slide-text">');
-
-            if(count($headings) == count($img_files)) {
-              echo($headings[$i]);
-            }
-            else {
-              if($i < count($headings)) {
-                echo($headings[$i]);
-              }
-            }
-
-            echo('</div>');
-            echo('</div>');
-          }
+          get_slides(array('Prvý nadpis','Druhý nadpis','Tretí nadpis'), 'img/carousel/');
         ?>
         <a id="prev" class="prev">❮</a>
         <a id="next" class="next">❯</a>
@@ -49,7 +29,8 @@
         </div>
       </section>
     </main>
-    
-  <?php
+    <?php
     include_once('partials/footer.php')
-  ?>
+    ?>
+</body>
+</html>
